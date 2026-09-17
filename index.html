@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#817b39">
+  <title>ΣΤΑΤΗΡ | Ελληνικά Προϊόντα Διατροφής</title>
+  <meta name="description" content="ΣΤΑΤΗΡ — Ελληνικά προϊόντα διατροφής.">
+  <style>
+    :root{
+      --sand:#c4bb7d;
+      --sand-light:#d2ca91;
+      --olive:#817b39;
+      --olive-dark:#676329;
+      --ink:#17170f;
+      --cream:#f5f1d9;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--sand);color:var(--ink)}
+    body{
+      min-height:100vh;
+      font-family:Georgia,"Times New Roman",serif;
+      overflow:hidden;
+    }
+
+    body::before,body::after{
+      content:"";
+      position:fixed;
+      left:0;right:0;
+      height:28px;
+      background:var(--olive);
+      z-index:2;
+    }
+    body::before{top:0}
+    body::after{bottom:0}
+
+    .page{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:72px 24px;
+      position:relative;
+      isolation:isolate;
+      background:
+        radial-gradient(circle at 50% 45%, rgba(255,255,255,.18), transparent 38%),
+        linear-gradient(135deg, var(--sand-light), var(--sand));
+    }
+
+    .olive-art{
+      position:absolute;
+      width:360px;
+      height:360px;
+      opacity:.11;
+      z-index:-1;
+      color:var(--olive-dark);
+    }
+    .olive-art.left{left:-80px;bottom:15px;transform:rotate(-12deg)}
+    .olive-art.right{right:-80px;bottom:15px;transform:scaleX(-1) rotate(-12deg)}
+
+    main{
+      width:min(760px,100%);
+      text-align:center;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      margin-bottom:30px;
+    }
+
+    .mark{
+      width:86px;
+      height:86px;
+      display:grid;
+      place-items:center;
+      color:var(--olive-dark);
+      flex:0 0 auto;
+    }
+    .mark svg{width:100%;height:100%}
+
+    .wordmark{
+      margin:0;
+      font-size:clamp(3.2rem,8vw,6.4rem);
+      line-height:.9;
+      font-weight:400;
+      letter-spacing:.035em;
+      color:#11110c;
+    }
+
+    .divider{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      width:min(680px,92%);
+      margin:0 auto 24px;
+      color:var(--olive-dark);
+    }
+    .divider::before,.divider::after{
+      content:"";
+      height:1px;
+      background:currentColor;
+      flex:1;
+      opacity:.75;
+    }
+    .divider svg{width:34px;height:34px}
+
+    .tagline{
+      margin:0 0 64px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:clamp(.76rem,1.8vw,1rem);
+      letter-spacing:.42em;
+      text-transform:uppercase;
+      color:#4f4c26;
+    }
+
+    .contact{
+      display:grid;
+      gap:18px;
+      width:max-content;
+      max-width:100%;
+      margin:auto;
+      text-align:left;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+    .contact a{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      color:#292817;
+      text-decoration:none;
+      font-size:clamp(1rem,2.4vw,1.35rem);
+      transition:opacity .2s ease;
+    }
+    .contact a:hover{opacity:.7}
+    .icon{
+      width:48px;height:48px;border-radius:50%;
+      display:grid;place-items:center;
+      background:var(--olive);
+      color:var(--cream);
+      flex:0 0 auto;
+    }
+    .icon svg{width:22px;height:22px}
+
+    @media (max-width:600px){
+      body{overflow:auto}
+      .brand{gap:10px}
+      .mark{width:58px;height:58px}
+      .tagline{letter-spacing:.22em;margin-bottom:48px}
+      .olive-art{width:250px;height:250px}
+      .contact{width:100%;max-width:330px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <svg class="olive-art left" viewBox="0 0 300 300" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 275C70 210 102 143 145 42"/>
+        <path d="M58 225c-25-15-38-38-39-69 31 8 50 27 55 57"/>
+        <path d="M91 176c-28-13-44-35-48-65 33 5 54 22 62 51"/>
+        <path d="M120 119c-23-10-37-27-42-51 27 3 45 16 54 39"/>
+        <path d="M77 232c28-6 51 0 69 20-27 13-51 11-73-6"/>
+        <path d="M108 182c30-4 53 5 69 27-29 10-53 5-73-14"/>
+        <path d="M136 129c25-2 44 7 56 27-25 7-45 2-60-16"/>
+        <ellipse cx="47" cy="250" rx="11" ry="22" transform="rotate(-35 47 250)"/>
+        <ellipse cx="71" cy="263" rx="10" ry="21" transform="rotate(-25 71 263)"/>
+      </g>
+    </svg>
+    <svg class="olive-art right" viewBox="0 0 300 300" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 275C70 210 102 143 145 42"/>
+        <path d="M58 225c-25-15-38-38-39-69 31 8 50 27 55 57"/>
+        <path d="M91 176c-28-13-44-35-48-65 33 5 54 22 62 51"/>
+        <path d="M120 119c-23-10-37-27-42-51 27 3 45 16 54 39"/>
+        <path d="M77 232c28-6 51 0 69 20-27 13-51 11-73-6"/>
+        <path d="M108 182c30-4 53 5 69 27-29 10-53 5-73-14"/>
+        <path d="M136 129c25-2 44 7 56 27-25 7-45 2-60-16"/>
+        <ellipse cx="47" cy="250" rx="11" ry="22" transform="rotate(-35 47 250)"/>
+        <ellipse cx="71" cy="263" rx="10" ry="21" transform="rotate(-25 71 263)"/>
+      </g>
+    </svg>
+
+    <main>
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M50 13c-10 5-13 15-8 23-10-2-18 3-20 12 10 1 16 6 19 14-3 9 0 18 8 24 6-7 9-15 8-24 8-4 14-11 15-21-8-1-15 1-21 7 3-9 2-17-1-25z"/>
+              <path d="M38 28c7 4 14 5 22 2M34 50c9-1 17 2 23 9M47 61c6-7 13-11 22-12"/>
+              <circle cx="62" cy="23" r="5"/>
+            </g>
+          </svg>
+        </div>
+        <h1 class="wordmark">ΣΤΑΤΗΡ</h1>
+      </div>
+
+      <div class="divider" aria-hidden="true">
+        <svg viewBox="0 0 40 40">
+          <g fill="currentColor">
+            <path d="M19 34c2-13 5-22 13-29-5 11-8 20-9 30z"/>
+            <ellipse cx="15" cy="17" rx="4" ry="8" transform="rotate(-40 15 17)"/>
+            <ellipse cx="27" cy="14" rx="4" ry="8" transform="rotate(35 27 14)"/>
+            <ellipse cx="12" cy="27" rx="4" ry="8" transform="rotate(-55 12 27)"/>
+            <ellipse cx="29" cy="25" rx="4" ry="8" transform="rotate(50 29 25)"/>
+          </g>
+        </svg>
+      </div>
+
+      <p class="tagline">Ελληνικά προϊόντα διατροφής</p>
+
+      <div class="contact">
+        <a href="tel:+302107258394" aria-label="Τηλέφωνο">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.9z"/>
+            </svg>
+          </span>
+          <span>+30 210 7258394</span>
+        </a>
+
+        <a href="mailto:info@stater.com.gr" aria-label="Email">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-10 7L2 7"/>
+            </svg>
+          </span>
+          <span>info@stater.com.gr</span>
+        </a>
+        <a href="https://maps.google.com/?q=Leoforos+Kifisias+100+Athina" target="_blank" rel="noopener" aria-label="Διεύθυνση">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </span>
+          <span>Μιχαλακοπούλου 45, 115 28 Αθήνα</span>
+        </a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
